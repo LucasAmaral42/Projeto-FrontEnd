@@ -41,22 +41,26 @@ body {
 *****  NAVEGAÇÃO
 */
 
-.nav-h ul {
+.botao-menu{
+    display: none;
+}
+
+.nav-h-desktop ul {
     display: flex;
 }
 
-.nav-h {
+.nav-h-desktop {
     align-self: center;
     margin-right: 1em;
 }
 
-.nav-h ul li {
+.nav-h-desktop ul li {
     list-style-type: none;
     font-size: 1.2em;
     border-left: 1px solid #F78181;
 }
 
-.nav-h ul li a {
+.nav-h-desktop ul li a {
     color: #8A4B08;
     padding: 5px;
     text-decoration: none;
@@ -138,7 +142,6 @@ body {
 *****  FOOTER
 */
 
-
 .redes-sociais {
     padding: 2em;
 }
@@ -192,7 +195,9 @@ th{
     background: #d0d0d0;
 }
 
-@media(max-width: 650px){    
+
+
+@media(max-width: 850px){    
     
     /*
     *****  HEADER
@@ -211,26 +216,57 @@ th{
     *****  NAVEGAÇÃO
     */
 
-    .nav-h ul {
+    .nav-h-desktop {
+        display: none;
+    }
+    
+    .nav-h-mobile {
         display: none;
     }
 
-    .nav-h {
-        align-self: center;
-        margin-right: 1em;
-    }
-
-    .nav-h ul li {
-        list-style-type: none;
-        font-size: 1.2em;
-        border-left: 1px solid #F78181;
-    }
-
-    .nav-h ul li a {
+    .botao-menu{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        height: 3.7em;
+        margin-top: 0.5em;
+        background: #CEF6D8;
         color: #8A4B08;
-        padding: 5px;
-        text-decoration: none;
+        border-radius: 30px;
+        cursor: pointer;
     }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        left: 0;
+        background-color: #ECF8E0;
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s; 
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #8A4B08;
+        display: block;
+        transition: 0.3s;
+      }
+    
+      .sidenav .closebtn {
+        position: absolute;
+        color: #000;
+        top: 0;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+      }
 
     /*
     *****  CORPO
@@ -263,7 +299,7 @@ th{
     */
 
     .botoes-redes {
-        font-size: 0.75em;
+        font-size: 0.7em;
     }
 
     .redes-sociais ul li h2 {
