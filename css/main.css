@@ -66,6 +66,10 @@ body {
     text-decoration: none;
 }
 
+.sidenav{
+    display: none;
+}
+
 /*
 *****  CORPO
 */
@@ -238,6 +242,7 @@ th{
     }
 
     .sidenav {
+        display: block;
         height: 100%;
         width: 0;
         position: fixed;
@@ -246,7 +251,7 @@ th{
         left: 0;
         background-color: #ECF8E0;
         overflow-x: hidden; 
-        padding-top: 60px; 
+        padding-top: 40px; 
         transition: 0.5s; 
       }
       

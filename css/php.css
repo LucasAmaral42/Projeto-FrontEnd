@@ -1,0 +1,33 @@
+#corpo-tb{
+    height: 15em;
+}
+
+#corpo-form{
+    height: 23.5em;
+}
+
+#corpo-login{
+    height: 14em;
+}
+
+#corpo-form input,
+#corpo-login input,
+#doces{
+    border: 1px solid #000;
+    border-radius: 1em;
+    height: 2.5em;
+    width: 25em;
+    padding-left: 1em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+#botao-formulario,
+#botao-login {
+    float: right;
+    background: #CEF6D8;
+    border: 1px solid rgb(85, 121, 94);
+    border-radius: 2em;
+    height: 2.5em;
+    width: 10em;
+}
