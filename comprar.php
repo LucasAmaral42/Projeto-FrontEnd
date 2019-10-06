@@ -3,7 +3,6 @@
 <div style="height:250px;" class="parallax1">
 </div>
 
-
 <div class="corpo-linaDoces" id="corpo-tb">
     <table class="tb-comprar">
         <tr>
@@ -48,7 +47,7 @@
 </div>
 
 <div class="corpo-linaDoces" id="corpo-form">
-    <form action="">
+    <form id="form-comprar" action="">
         <label for="nome">Nome:</label>
         <input id="nome" type="text" name="nome" placeholder="Insira seu nome...">
 
@@ -57,22 +56,30 @@
         
         <label for="endereco">Endereço (Rua, Nº, Bairro):</label>
         <input id="endereco" type="text" name="endereco">
-        
+
         <label for="cidade">Cidade:</label>
         <input id="cidade" type="text" name="cidade">
 
-        <label for="doces">Doces:</label>
-        <select name="doces" id="doces">
+        <label for="doce">Doces:</label>
+        <select name="doce" id="doce">
+            <option value="">Selecione o doce desejado</option>
             <option value="bolo-chocholate">Bolo Chocolate</option>
             <option value="bolo-laka">Bolo Laka</option>
             <option value="brigadeiro">Brigadeiro</option>
             <option value="panettone">Panettone</option>
             <option value="chocottone">Chocottone</option>
         </select>
-        <button id="botao-formulario" >Enviar pedido</button>
+        <input type="button" id="botao-formulario" onclick="validar()" value="Enviar pedido">
     </form>
+</div>
 
-    <a onclick="validarForm()">teste</a>
+
+
+<div onclick="fecharModal()" id="modal-compra" class="modal-container">
+    <div class="modal">
+        <h1>Preencha todos os campos!</h1>
+        <input class="fechar" onclick="fecharModal()" type="button" value="Fechar">
+    </div>
 </div>
 
 <?php require_once 'footer.php' ?>

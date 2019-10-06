@@ -12,7 +12,7 @@
 
 #corpo-form input,
 #corpo-login input,
-#doces{
+#doce{
     border: 1px solid #000;
     border-radius: 1em;
     height: 2.5em;
@@ -30,4 +30,43 @@
     border-radius: 2em;
     height: 2.5em;
     width: 10em;
+}
+
+
+/*
+********** MODAL
+*/
+
+.modal-container{
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mostrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background: #fff;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.fechar{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    color: #000;
+    float: right;
+    background: #F7819F;
+    border: white solid 1px;
+    border-radius: 3em;
+    padding: 0.5em;
+    margin-top: 1.5em;
 }
