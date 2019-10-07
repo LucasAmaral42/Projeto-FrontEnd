@@ -11,10 +11,12 @@
 
     $resultado = $conexao->query($query);
 
-    if ($resultado) {
+    $resultado = $resultado->fetch();
+
+    
+    if ($resultado[0] == $usuario && $resultado[1] == $cod) {
         header("Location:consulta.php");
     }
     else{
-        echo "Falha";
+        echo "Falha ao logar";
     }
-?>

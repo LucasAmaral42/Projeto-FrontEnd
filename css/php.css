@@ -32,6 +32,43 @@
     width: 10em;
 }
 
+#corpo-consulta{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.botao-consulta-ex{
+    background: #F7819F;
+    border: 2px solid #000;
+}
+
+.botao-consulta-ex a{
+    text-decoration: none;
+    color: #000;
+}
+
+#tabela-consulta td {
+    padding: 1px;
+    height: 3em;
+    border: 1px solid #000;
+}
+
+#tabela-consulta th {
+    background: #CEF6D8;
+}
+
+@media (max-width:760px){
+    
+    #tabela-consulta{
+        font-size: 0.7em;
+    }
+}
+@media (max-width:450px){
+    #tabela-consulta{
+        font-size: 0.55em;
+    }
+}
+
 
 /*
 ********** MODAL

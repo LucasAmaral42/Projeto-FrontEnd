@@ -6,5 +6,5 @@ class Conexao{
         $conexao = new PDO ("mysql:host=localhost;dbname=linadoces", 'root', '');
         return $conexao;
     }
-
+    
 }
