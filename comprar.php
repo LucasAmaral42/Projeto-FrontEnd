@@ -47,7 +47,8 @@
 </div>
 
 <div class="corpo-linaDoces" id="corpo-form">
-    <form id="form-comprar" action="">
+
+    <form id="form-comprar" action="cadastrar-pedido.php" method="post">
         <label for="nome">Nome:</label>
         <input id="nome" type="text" name="nome" placeholder="Insira seu nome...">
 
@@ -57,8 +58,8 @@
         <label for="endereco">Endereço (Rua, Nº, Bairro):</label>
         <input id="endereco" type="text" name="endereco">
 
-        <label for="cidade">Cidade:</label>
-        <input id="cidade" type="text" name="cidade">
+        <label for="cidade">Data:</label>
+        <input id="data" type="date" name="data-entrega">
 
         <label for="doce">Doces:</label>
         <select name="doce" id="doce">
@@ -69,8 +70,9 @@
             <option value="panettone">Panettone</option>
             <option value="chocottone">Chocottone</option>
         </select>
-        <input type="button" id="botao-formulario" onclick="validar()" value="Enviar pedido">
+        <input type="submit" id="botao-formulario" onclick="return validar()" value="Enviar pedido">
     </form>
+    
 </div>
 
 

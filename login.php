@@ -4,7 +4,7 @@
 </div>
 
 <div class="corpo-linaDoces" id="corpo-login">
-    <form action="">
+    <form action="autentica-user.php" method="POST">
         <label for="usuario">Usuário:</label>
         <input id="usuario" type="text" name="usuario" placeholder="Usuario...">
 

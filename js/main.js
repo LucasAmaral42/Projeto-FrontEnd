@@ -14,7 +14,7 @@
       document.getElementById('nome').value,
       document.getElementById('telefone').value,
       document.getElementById('endereco').value,
-      document.getElementById('cidade').value,
+      document.getElementById('data').value,
       doce.options[doce.selectedIndex].value,
       document.getElementById('nome').value
     ] 
@@ -29,13 +29,16 @@
           break;
       }
     }
+
     // Modal
     if(!aux)
-      var botao = document.getElementById('form-comprar').submit();
+      return true;
     else{
       var modal = document.getElementById('modal-compra');
       modal.classList.add('mostrar');
+      return false;
     }
+    
   }
 
   function fecharModal(){
