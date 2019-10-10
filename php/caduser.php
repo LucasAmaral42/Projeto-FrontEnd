@@ -11,5 +11,5 @@ if (getenv("REQUEST_METHOD") == "POST") {
     $conexao->exec($sql);
 }
 
-header('Location:login.php');
+header('Location: ../login.php');
 ?>

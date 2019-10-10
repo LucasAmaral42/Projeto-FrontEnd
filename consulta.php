@@ -1,5 +1,5 @@
-<?php require_once 'cabecalho.php' ?>
-<?php require_once 'conexao.php' ?>
+<?php require_once 'php/cabecalho.php' ?>
+<?php require_once 'php/conexao.php' ?>
 
 <?php
     
@@ -33,7 +33,7 @@
                     <td><?php echo $linha['endereco'] ?></td>
                     <td><?php echo $linha['data_entrega'] ?></td>
                     <td><?php echo $linha['doces'] ?></td>
-                    <td class="botao-consulta-ex"><a href="/consulta-excluir.php?id=<?php echo $linha['id'] ?>" >Excluir</a></td>
+                    <td class="botao-consulta-ex"><a href="php/consulta-excluir.php?id=<?php echo $linha['id'] ?>" >Excluir</a></td>
                 </tr>
             <?php endforeach ?>
         </tbody>
@@ -45,4 +45,4 @@
 </div>
 
 
-<?php require_once 'footer.php' ?>
+<?php require_once 'php/footer.php' ?>

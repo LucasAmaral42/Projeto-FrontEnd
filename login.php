@@ -1,10 +1,10 @@
-<?php require_once 'cabecalho.php' ?>
+<?php require_once 'php/cabecalho.php' ?>
 
 <div style="height:150px;" class="parallax1">
 </div>
 
 <div class="corpo-linaDoces" id="corpo-login">
-    <form action="autentica-user.php" method="POST">
+    <form action="php/autentica-user.php" method="POST">
         <label for="usuario">Usuário:</label>
         <input id="usuario" type="text" name="usuario" placeholder="Usuario...">
 
@@ -18,4 +18,4 @@
 <div style="height:150px;" class="parallax2">
 </div>
 
-<?php require_once 'footer.php' ?>
+<?php require_once 'php/footer.php' ?>

@@ -9,4 +9,4 @@
 
     $conexao->query($query);
 
-    header("Location: consulta.php");
+    header("Location: ../consulta.php");

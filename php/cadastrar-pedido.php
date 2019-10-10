@@ -18,4 +18,4 @@
         $conexao->exec($sql);
     }
 
-    header('location: comprar.php');
+    header('location: ../comprar.php');

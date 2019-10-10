@@ -15,7 +15,7 @@
 
     
     if ($resultado[0] == $usuario && $resultado[1] == $cod) {
-        header("Location:consulta.php");
+        header("Location: ../consulta.php");
     }
     else{
         echo "Falha ao logar";

@@ -1,4 +1,4 @@
-<?php require_once 'cabecalho.php' ?>
+<?php require_once 'php/cabecalho.php' ?>
 
 <div style="height:250px;" class="parallax1">
 </div>
@@ -48,7 +48,7 @@
 
 <div class="corpo-linaDoces" id="corpo-form">
 
-    <form id="form-comprar" action="cadastrar-pedido.php" method="post">
+    <form id="form-comprar" action="php/cadastrar-pedido.php" method="post">
         <label for="nome">Nome:</label>
         <input id="nome" type="text" name="nome" placeholder="Insira seu nome...">
 
@@ -84,4 +84,4 @@
     </div>
 </div>
 
-<?php require_once 'footer.php' ?>
+<?php require_once 'php/footer.php' ?>
