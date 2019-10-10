@@ -1,3 +1,7 @@
+/*
+********* CORPO LOGIN
+*/
+
 #corpo-tb{
     height: 15em;
 }
@@ -10,13 +14,17 @@
     height: 14em;
 }
 
+/*
+********* INPUTs COMPRAR/LOGIN
+*/
+
 #corpo-form input,
 #corpo-login input,
 #doce{
     border: 1px solid #000;
     border-radius: 1em;
     height: 2.5em;
-    width: 25em;
+    width: 19em;
     padding-left: 1em;
     display: block;
     margin-bottom: 1em;
@@ -32,20 +40,26 @@
     width: 10em;
 }
 
+@media (min-width: 800px){
+    #corpo-form input,
+    #doce{
+        width: 40em;
+    }
+}
+
+/*
+********* CORPO CONSULTA
+*/
+
 #corpo-consulta{
     font-family: Arial, Helvetica, sans-serif;
     border: none;
 }
 
-.botao-consulta-ex{
-    background: #F7819F;
-    border: 2px solid #000;
-}
 
-.botao-consulta-ex a{
-    text-decoration: none;
-    color: #000;
-}
+/*
+********* TABELA CONSULTA
+*/
 
 #tabela-consulta td {
     padding: 1px;
@@ -55,6 +69,16 @@
 
 #tabela-consulta th {
     background: #CEF6D8;
+}
+
+.botao-consulta-ex{
+    background: #F7819F;
+    cursor: pointer;
+}
+
+.botao-consulta-ex a{
+    text-decoration: none;
+    color: #000;
 }
 
 @media (max-width:760px){

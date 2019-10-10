@@ -33,7 +33,7 @@
                     <td><?php echo $linha['endereco'] ?></td>
                     <td><?php echo $linha['data_entrega'] ?></td>
                     <td><?php echo $linha['doces'] ?></td>
-                    <td class="botao-consulta-ex"><a href="/consulta-editar.php?id=<?php echo $linha['id'] ?>" >Excluir</a></td>
+                    <td class="botao-consulta-ex"><a href="/consulta-excluir.php?id=<?php echo $linha['id'] ?>" >Excluir</a></td>
                 </tr>
             <?php endforeach ?>
         </tbody>
