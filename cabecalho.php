@@ -4,9 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lina Doces</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/php.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Dancing+Script|Indie+Flower|Open+Sans|Pacifico" rel="stylesheet">
 </head>
 
@@ -14,8 +11,6 @@
 
     <header class="header">
         <div class="logo-site" style="display:flex; align-items: center;">
-            <div class="logo-header"><i class="fas fa-cookie-bite fa-4x fa-fw"></i></i></div>
-
             <div class="nome-header">
                 <a href="index.html">Confeitaria Lina Doces</a>
             </div>
@@ -25,18 +20,18 @@
             <ul>
                 <li style="border: none;">
                     <a href="index.html">
-                        <i class="fas fa-home fa-xl fa-fw"></i> Home
+                        Home
                     </a>
 
                 </li>
                 <li>
                     <a href="comprar.php">
-                        <i class="fas fa-dollar-sign"></i> Comprar
+                        Comprar
                     </a>
                 </li>
                 <li>
                     <a href="login.php">
-                        <i class="fas fa-user fa-xl fa-fw"></i> Login
+                        Login
                     </a>
                 </li>
             </ul>
@@ -45,7 +40,9 @@
     </header>
 
     <div class="botao-menu" onclick="openNav()">
-        <i class="fas fa-bars fa-3x fa-fw"></i>
+        <div class="botao-menu-icone"></div>
+        <div class="botao-menu-icone"></div>
+        <div class="botao-menu-icone"></div>
     </div>
 
     <nav id="Sidenav" class="sidenav">
@@ -53,17 +50,17 @@
         <ul>
             <li>
                 <a href="index.html">
-                    <i class="fas fa-home fa-xl fa-fw"></i> Home
+                    Home
                 </a>
             </li>
             <li>
                 <a href="comprar.php">
-                    <i class="fas fa-dollar-sign"></i> Comprar
+                    Comprar
                 </a>
             </li>
             <li>
                 <a href="login.php">
-                    <i class="fas fa-user fa-xl fa-fw"></i> Login
+                    Login
                 </a>
             </li>
         </ul>
