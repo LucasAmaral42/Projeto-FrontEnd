@@ -3,8 +3,15 @@
 class Conexao{    
 
     public static function pegarConexao(){
-        $conexao = new PDO ("mysql:host=localhost;dbname=linadoces", 'root', '');
-        return $conexao;
+
+        try {
+            $conexao = new PDO ("mysql:host=localhost:3307;dbname=linadoces", 'root', '');
+            return $conexao;
+            
+        }
+        catch(PDOException $e) {
+            echo $criadb . "Falha na conexão:<br />" . $e->getMessage();
+        }  
     }
     
 }

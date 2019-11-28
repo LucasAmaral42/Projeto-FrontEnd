@@ -1,5 +1,8 @@
 <?php
-$conexao = new PDO("mysql:host=localhost;dbname=linadoces", 'root', '');
+require_once 'conexao.php';
+
+$conexao = new Conexao;
+$conexao = Conexao::pegarConexao();
 
 if (getenv("REQUEST_METHOD") == "POST") {
     
