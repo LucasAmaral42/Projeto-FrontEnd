@@ -263,6 +263,10 @@ th{
     .caixa ul{
         font-size: 1.4em;
     }
+    
+    .corpo-linaDoces .Lina {
+        width: 100%;
+    }
 
     .corpo-linaDoces .sugestao label{
         font-size: 1.4em;

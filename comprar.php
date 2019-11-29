@@ -58,7 +58,7 @@
         <label for="endereco">Endereço (Rua, Nº, Bairro):</label>
         <input id="endereco" type="text" name="endereco">
 
-        <label for="cidade">Data:</label>
+        <label for="cidade">Data de entrega:</label>
         <input id="data" type="date" name="data-entrega">
 
         <label for="doce">Doces:</label>

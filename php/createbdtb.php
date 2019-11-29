@@ -12,7 +12,7 @@
         $conexao->exec($query);
     }
     catch(PDOException $e) {
-        echo $criadb . "Falha na criação do Banco:<br />" . $e->getMessage();
+        echo  "Falha na criação do Banco:<br />" . $e->getMessage();
     } 
     
 
@@ -30,7 +30,7 @@
         $conexao->exec($query);
       }
     catch(PDOException $e) {
-        echo $criatab . "Falha na criação da Tabela:<br />" . $e->getMessage();
+        echo "Falha na criação da Tabela de Pedidos:<br />" . $e->getMessage();
     }    
 
 
@@ -45,5 +45,5 @@
         $conexao->exec($query);
       }
     catch(PDOException $e) {
-        echo $criatab . "Falha na criação da Tabela:<br />" . $e->getMessage();
+        echo "Falha na criação da Tabela de Usuários:<br />" . $e->getMessage();
     }    

@@ -10,7 +10,7 @@ class Conexao{
             
         }
         catch(PDOException $e) {
-            echo $criadb . "Falha na conexão:<br />" . $e->getMessage();
+            echo "Falha na conexão:<br />" . $e->getMessage();
         }  
     }
     
